@@ -1,66 +1,161 @@
 body {
-  background-color: rgba(255, 255, 255, 0.767)
+  background-color: #f9f9f9;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
 }
- .header {
-  border: #aeaeae;
-  padding: 30px;
+header {
+  background-color: #fff6f5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 4px solid #fff6f5;
+}
+.logo {
+  width: 200%;
+}
+.logo img {
+  width: 100px;
+}
+.logo img:hover {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+nav {
+  background-color: #f5dbdf;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li {
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  font-size: larger;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: rgb(0, 0, 0);
+}
+.hero img {
+  width: 100%;
+}
+.hero-text {
+  background-color: #fff6f5;
+  color: #fec9d2;
+  padding: 10px;
   text-align: center;
-  border-radius: 20px;
 }
-h1 {
-  color: rgb(0, 0, 0);
+#about {
+  background-image: url(./asset/catty.gif);
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90vh;
+  padding: 20px;
 }
-img {
-  width: 40%;
-  border: 3px solid  rrgb(255, 191, 231)) ;
-  border-radius: 30%;
-  display: block;
-  margin: 0 auto
+#about {
+  background-image: url(./asset/);
+  background-position: right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 75vh;
+  padding: 40px;
+  background-color: #fce5e1;
 }
-img:hover {
-  transform: scale(1.1)
+#about h2 {
+  margin-top: 50px;
+  width: 50%;
+  padding-left: 60px;
 }
-button {
-  margin-top: 30px;
-padding: 10 px 20 px;
-background-color: rgb(236, 237, 219);
+#about p {
+  width: 50%;
+  padding-left: 40px;
+  line-height: 1.7em;
+}
+#product {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 40px;
+}
+
+#product h2 {
+  text-align: center;
+  color: #f8a0a0;
+}
+
+.card-product {
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(255, 224, 224);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+#contact {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  border: 1px solid #f8a0a0;
+}
+.contact-text {
+  align-items: center;
+  padding-left: 70px;
+}
+.contact-text h4 {
+  color: #fa8a8a;
+}
+.contact-text p {
+  font-size: xx-large;
+}
+.contact-text button {
+  padding: 8px 35px;
+  background-color: #f8a0a0;
+  border: white;
+}
+.contact-text button:hover {
+  background-color: #ffbec8;
+  color: #f493a1;
+  box-shadow: 3px 3px 12px #ffa7b4;
+}
+footer{
+text-align: center;
+padding: 12px;
+background-color: #f5dbdf;
 color: rgb(0, 0, 0);
-border: none;
-border-radius: 20px;
-cursor: pointer;
-
-}
-button:hover {
-  transform: scale(0,8);
-  transition: all .3s ease-in-out;
-}
-.about {
-display: flex;
-padding: 30px;
-}
-.about img {
-  width: 40%;
-}
-  .about p {
-    padding-left: 40px;
-    margin: auto;
-  }
-
-
-.project {
-  width: 90%;
-text-align: center;
-color: rgb(255, 255, 255);
-} 
-.my-project{
-display: flex;
-flex-wrap: wrap;
-padding: 30px 10px;
-}
-footer {
-margin-top: 30px;
-background-color: rgb(0, 0, 0);
-padding: 20px;
-text-align: center;
-color: rgb(255, 255, 255);
 }
